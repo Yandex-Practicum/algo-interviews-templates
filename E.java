@@ -1,7 +1,0 @@
-/**
- * E
- */
-public class E {
-
-    
-}
