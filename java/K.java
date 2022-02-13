@@ -18,7 +18,7 @@ public class K {
         return List.of();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out))) {
             List<Segment> firstSequence = readSegments(reader);
@@ -29,13 +29,13 @@ public class K {
         }
     }
 
-    private static void outputAnswer(List<Segment> intersection, BufferedWriter writer) {
+    private static void outputAnswer(List<Segment> intersection, BufferedWriter writer) throws IOException {
         for (Segment segment : intersection) {
             writer.write(segment.left + " " + segment.right + "\n");
         }
     }
 
-    private static List<Segment> readSegments(BufferedReader reader) {
+    private static List<Segment> readSegments(BufferedReader reader) throws IOException {
         int n = readInt(reader);
         List<Segment> segments = new ArrayList<>(n);
         for (int i = 0; i < n; i++) {

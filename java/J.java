@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
@@ -11,7 +12,7 @@ public class J {
         return false;
     }
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             String template = reader.readLine().strip();
             String stringToCheck = reader.readLine().strip();
