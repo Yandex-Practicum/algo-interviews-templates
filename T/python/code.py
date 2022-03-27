@@ -1,11 +1,10 @@
 from typing import List
 
 
-def generate_sequences(n: int) -> List[str]:
+def get_max_xor(numbers: List[int]) -> int:
     # your code goes here
-    return []
+    return 0
 
 n = int(input())
-sequnces = generate_sequences(n)
-for seq in sequnces:
-    print(seq)
+numbers = list(map(int, input().split()))
+print(get_max_xor(numbers))

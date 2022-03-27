@@ -1,10 +1,13 @@
-def string_matches_template(s: str, template: str) -> bool:
-    # your code goes here
-    return False
+from typing import List
 
-template = input()
-string_to_check = input()
-if string_matches_template(string_to_check, template):
-    print('YES')
-else:
-    print('NO')
+
+def get_all_peaceful_combinations(n) -> List[List[int]]:
+    # your code goes here
+    return [[]]
+
+n = int(input())
+combinations = get_all_peaceful_combinations(n)
+
+print(len(combinations))
+for combination in combinations:
+    print(*combination)

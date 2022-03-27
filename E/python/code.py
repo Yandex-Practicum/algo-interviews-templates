@@ -1,6 +1,6 @@
-def convert_to_good_string(probably_bad_string: str) -> str:
+def convert_to_arabic(number: str) -> int:
     # your code goes here
-    return ""
+    return -1
 
-probably_bad_string = input()
-print(convert_to_good_string(probably_bad_string))
+roman_number = input()
+print(convert_to_arabic(roman_number))

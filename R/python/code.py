@@ -1,11 +1,9 @@
-IPV4 = "IPv4"
-IPV6 = "IPv6"
-ERROR = "Error"
-
-# return IPV4, IPV6 or ERROR constant
-def check_ip_address(ip_to_check: str) -> str:
+def is_pasha_wins(n: int) -> bool:
     # your code goes here
-    return ERROR
+    return False
 
-ip_to_check = input()
-print(check_ip_address(ip_to_check))
+n = int(input())
+if is_pasha_wins(n):
+    print('Pasha')
+else:
+    print('Mark')

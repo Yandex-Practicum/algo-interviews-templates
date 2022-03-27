@@ -1,29 +1,25 @@
-class HistoricalArray:
-    def __init__(self, size) -> None:
-        # your code goes here
-        pass
+from typing import List, Tuple
 
-    def set(self, index, value) -> None:
-        # your code goes here
-        pass
 
-    def get(self, index, era_id) -> int:
-        # your code goes here
-        pass
+def get_intersection(first_sequence: List[Tuple[int]], second_sequence: List[Tuple[int]]) -> List[Tuple[int]]:
+    # your code goes here
+    return []
 
-    def begin_new_era(self, era_id) -> None:
-        # your code goes here
-        pass
+def read_sequence() -> List[Tuple[int]]:
+    n = int(input())
+    sequnce = []
+    for i in range(n):
+        start, end = map(int, input().split())
+        sequnce.append((start, end))
+    return sequnce
 
-size = int(input())
-q = int(input())
-historical_array = HistoricalArray(size)
-for i in range(q):
-    query = input().split()
-    query_type = query[0]
-    if query_type == "set":
-        historical_array.set(int(query[1]), int(query[2]))
-    elif query_type == "begin_new_era":
-        historical_array.begin_new_era(int(query[1]))
-    else:
-        print(historical_array.get(int(query[1]), int(query[2])))
+
+def print_sequence(sequence: List[Tuple[int]]) -> None:
+    for segment in sequence:
+        print(segment[0], segment[1])
+
+
+first_sequence = read_sequence()
+second_sequence = read_sequence()
+intersection = get_intersection(first_sequence, second_sequence)
+print_sequence(intersection)

@@ -1,24 +1,21 @@
-from typing import List, Optional
+from typing import List
 
 
-class Node:
-    def __init__(self) -> None:
-        self.left = None
-        self.right = None
+class Building:
+    def __init__(self, need_capital, added_capital) -> None:
+        self.need_capital = need_capital
+        self.added_capital = added_capital
 
 
-def get_tree_border(root: Node) -> List[int]:
+
+def get_max_final_capital(buildings: List[Building], start_capital: int, max_buildings: int) -> int:
     # your code goes here
-    return []
+    return 0
 
-def read_tree() -> Node:
-    size, root_id = map(int, input().split())
-    nodes = [Node(None, None) for i in range(size)]
-    for i in range(size):
-        left, right = map(int, input().split())
-        nodes[i].left = nodes[left] if left != -1 else None
-        nodes[i].right = nodes[right] if right != -1 else None
-    return nodes[root_id]
-
-
-tree = read_tree()
+n, k = map(int, input().split())
+buildings = []
+for i in range(n):
+    c, p = map(int, input().split())
+    buildings.append(Building(c, p))
+M = int(input())
+print(get_max_final_capital(buildings, M, k))

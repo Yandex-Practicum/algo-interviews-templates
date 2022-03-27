@@ -1,10 +1,11 @@
-from typing import List
+IPV4 = "IPv4"
+IPV6 = "IPv6"
+ERROR = "Error"
 
-
-def get_max_xor(numbers: List[int]) -> int:
+# return IPV4, IPV6 or ERROR constant
+def check_ip_address(ip_to_check: str) -> str:
     # your code goes here
-    return 0
+    return ERROR
 
-n = int(input())
-numbers = list(map(int, input().split()))
-print(get_max_xor(numbers))
+ip_to_check = input()
+print(check_ip_address(ip_to_check))
