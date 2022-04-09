@@ -22,6 +22,7 @@ public class Solution {
     }
 
     private static List<Integer> readList(BufferedReader reader) throws IOException {
+        reader.readLine();
         return Arrays.asList(reader.readLine().strip().split(" "))
             .stream()
             .map(token -> Integer.parseInt(token))
