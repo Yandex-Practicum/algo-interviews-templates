@@ -27,9 +27,9 @@ void outputAnswer(const vector<int>& treeBorder) {
 vector<Vertex> readTree(int n) {
     vector<Vertex> tree;
     for (int i = 0; i < n; i++) {
-        int parent, weight;
-        cin >> parent >> weight;
-        tree.push_back(Vertex(weight, parent));
+        int left, right;
+        cin >> left >> right;
+        tree.push_back(Vertex(left, right));
     }
     return tree;
 }

@@ -38,8 +38,8 @@ public class Solution {
     private static List<Vertex> readTree(BufferedReader reader, int n) throws IOException {
         List<Vertex> tree = new ArrayList<>(n);
         for (int i = 0; i < n; i++) {
-            List<Integer> parentAndWeight = readTwoNumbers(reader);
-            tree.add(new Vertex(parentAndWeight.get(1), parentAndWeight.get(0)));
+            List<Integer> leftAndRight = readTwoNumbers(reader);
+            tree.add(new Vertex(leftAndRight.get(0), leftAndRight.get(1)));
         }
         return tree;
     }
