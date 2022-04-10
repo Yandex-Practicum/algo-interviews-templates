@@ -17,7 +17,6 @@ public class Solution {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             int n = readInt(reader);
             List<Integer> numbers = readList(reader);
-
             System.out.println(getNumberOfGoodPairs(n, numbers));
         } 
     }
