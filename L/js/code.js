@@ -30,9 +30,9 @@ process.stdin.on('end', solve);
 
 function solve() {
     const firstSequence = readSegments();
-    const secondSequence = readSegments(); 
+    const secondSequence = readSegments();
     const intersection = getIntersection(firstSequence, secondSequence);
-    outputAnswer(intersection);  
+    outputAnswer(intersection);
 }
 
 function readSegments() {
@@ -40,7 +40,7 @@ function readSegments() {
     let result = [];
     for (let i = 0; i < n; i++) {
         let segment = readArray();
-        result.push(new Segment(segment.left, segment.right));
+        result.push(new Segment(segment[0], segment[1]));
     }
     return result;
 }
