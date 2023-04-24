@@ -46,16 +46,22 @@ function solve() {
             let index = Number(queryParts[1]);
             let value = Number(queryParts[2]);
             array.set(index, value);
-        } else if (queryType.equals("begin_new_era")) {
+        } else if (queryType == "begin_new_era") {
             let eraId = Number(queryParts[1]);
             array.beginNewEra(eraId);
-        } else if (queryType.equals("get")) {
+        } else if (queryType == "get") {
             let index = Number(queryParts[1]);
             let eraId = Number(queryParts[2]);
-            writer.write( + "\n");
+            
             process.stdout.write(`${array.get(index, eraId)}\n`);
         }
     }
+}
+
+function readInt() {
+    const n = Number(_inputLines[_curLine]);
+    _curLine++;
+    return n;
 }
 
 function readQuery() {
