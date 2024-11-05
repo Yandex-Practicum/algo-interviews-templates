@@ -1,4 +1,4 @@
-/** Comment it before submitting
+#if !REMOTE_JUDGE
 public class Node {
     public int Value { get; private set; }
     public Node Next { get; set; }
@@ -9,7 +9,7 @@ public class Node {
         Next = next;
     }
 }
-**/
+#endif
 
 public class Solution {
     public static Node Reverse(Node head, int left, int right) {
