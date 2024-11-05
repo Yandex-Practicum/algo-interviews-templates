@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-/** Comment it before submitting
+#if !REMOTE_JUDGE
 public class Node(int value, IList<Node> neighbours)
 {
     public int Value = value;
@@ -16,7 +16,7 @@ public class Node(int value, IList<Node> neighbours)
     {
     }
 }
-**/
+#endif
 
 public class Solution
 {
