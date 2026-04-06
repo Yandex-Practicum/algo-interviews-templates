@@ -13,7 +13,7 @@ def get_tree_border(root: Node) -> List[int]:
 
 def read_tree() -> Node:
     size, root_id = map(int, input().split())
-    nodes = [Node(None, None) for i in range(size)]
+    nodes = [Node() for i in range(size)]
     for i in range(size):
         left, right = map(int, input().split())
         nodes[i].left = nodes[left] if left != -1 else None
