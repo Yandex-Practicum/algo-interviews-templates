@@ -41,7 +41,3 @@ int main() {
         cin >> M;
         cout << getMaxFinalCapital(buildings, M, k) << endl;
 }
-
-
-
-

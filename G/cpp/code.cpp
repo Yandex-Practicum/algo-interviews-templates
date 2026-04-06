@@ -7,14 +7,12 @@ struct Vertex {
     int w;
     int p;
 
-    Vertex(int w, int p) {
-        w = w;
-        p = p;
+    Vertex(int w, int p) : w(w), p(p) {
     }
 };
 
 
-int getNumberOfUpgoingPaths(vector<Vertex> tree, int x) {
+long long getNumberOfUpgoingPaths(vector<Vertex> tree, int x) {
     // your code goes here
     return 0;
 }

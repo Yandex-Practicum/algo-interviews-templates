@@ -1,11 +1,12 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
 using namespace std;
 
 void outputAnswer(const vector<string>& sequences) {
     for (const string& sequence : sequences) {
-        cout << sequence << " ";
+        cout << sequence << std::endl;
     }
 }
 

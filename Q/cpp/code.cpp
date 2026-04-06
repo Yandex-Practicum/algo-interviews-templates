@@ -4,10 +4,10 @@
 using namespace std;
 
 struct Point {
-    int x;
-    int y;
+    long long x;
+    long long y;
 
-    Point(int x, int y): x(x), y(y) {
+    Point(long long x, long long y): x(x), y(y) {
     }
 };
 
@@ -22,7 +22,7 @@ int main() {
     cin >> n;
     vector<Point> points;
     for (int i = 0; i < n; i++) {
-        int x, y;
+        long long x, y;
         cin >> x >> y;
         points.push_back(Point(x, y));
     }

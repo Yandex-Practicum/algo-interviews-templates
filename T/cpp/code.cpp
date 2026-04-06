@@ -4,15 +4,15 @@
 using namespace std;
 
 
-long long getMaxXOR(const vector<int>& list) {
+long long getMaxXOR(const vector<long long>& list) {
     // your code goes here
     return 0;
 }
 
-vector<int> readList() {
+vector<long long> readList() {
     int n;
     cin >> n;
-    vector<int> res(n);
+    vector<long long> res(n);
     for (int i = 0; i < n; i++) {
         cin >> res[i];
     }
@@ -20,7 +20,6 @@ vector<int> readList() {
 }
 
 int main() {
-    vector<int> list = readList();
+    vector<long long> list = readList();
     cout << getMaxXOR(list);
 }
-
